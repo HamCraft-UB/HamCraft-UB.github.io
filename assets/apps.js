@@ -51,7 +51,7 @@ async function loadGames() {
   status.style.display = 'block';
   status.textContent = "Loading games...";
   try {
-    const res = await fetch('https://cdn.jsdelivr.net/gh/HamCraft-UB/HamCraft-UB-jsdeliver-assets@main/apps/apps.json', { cache: "no-store" });
+    const res = await fetch('https://cdn.jsdelivr.net/gh/HamCraft-UB/HamCraft-UB-jsdeliver-assets@master/apps/apps.json', { cache: "no-store" });
     const data = await res.json();
 
     games = data
