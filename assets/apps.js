@@ -68,7 +68,7 @@ async function loadGames() {
       grid.appendChild(createCardElement(game));
     });
 
-    gameCountEl.textContent = `Games: ${games.length}`;
+    gameCountEl.textContent = `Apps: ${games.length}`;
     status.style.display = 'none';
   } catch (e) {
     status.textContent = "ERROR loading games.";
